@@ -14,7 +14,7 @@ class App extends Component {
  }
 
   componentDidMount(){
-    fetch('http://localhost:5000/api/player')
+    fetch('http://localhost:5000/api/players')
       .then(response => response.json())
       .then(response => this.setState({ players: response }))
   }
