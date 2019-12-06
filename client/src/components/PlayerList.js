@@ -11,9 +11,14 @@ const PlayerList = ({ players }) => {
     };
     return(
         <div>
+        <div>
+        <button onClick={toggle}>Go Dark</button>
+        </div>
         {players.map(player => (
             <PlayerCard player={player} key={player.id} />
         ))}
         </div>
     )
 }
+
+export default PlayerList;
